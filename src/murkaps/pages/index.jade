@@ -1,0 +1,70 @@
+extends  ../main
+
+block title
+    | Обратная связь
+
+block content
+    .mainpage
+            .feedback
+                .feedback_title Заявка на осмотр
+                .feedback_form
+                    label.feedback_row
+                            .feedback_row-title Представтесь
+                            input(type="text" id="name").feedback_row-input
+                    label.feedback_row.a0
+                        label.feedback_row.a1
+                            .feedback_row-title Телефон
+                            input(type="text" id="tel" placeholder = "+7 (    )").feedback_row-input
+                        label.feedback_row.a2
+                            .feedback_row-title Адрес эл почты
+                            input(type="text" id="email").feedback_row-input
+                    label.feedback_row
+                        .feedback_row-title  Сообщение
+                        textarea(id="texarial").feedback_row-textarea
+                    .feedback_form-button
+                        input(type="submit" value="Отправить" ).feedback_form-submit
+            .location
+                .location_map(id="map3d")
+                .location_map-plag
+                .location_map-box <span class="tab">Улица Александры Моховой дом кв </span>
+
+                .location_info
+                    .location_info-title Офис продаж на объекте
+                    .location_info-title.a0 Будни: 09:00 до 20:00, выходные: с 10:00 до 19:00
+                    .location_info-inform Станция метро «Теплый Стан», первый вагон из центра, через турникет направо, выход к ТЦ «Принц Плаза». Направо, через 15 метров, остановка автобуса №895, либо, 50 метров далее остановки маршрутных такси (с торца ТЦ «Принц Плаза»).Маршрутка №895 — в Коммунарку
+                    .location_tel
+                        .location_tel-title персональный консультант
+                        .location_tel-info  +7 (499) 408-08-16, Алексушин Валерий
+                        .location_tel-title Офис продаж на объекте
+                        .location_tel-info  +7 (499) 947-01-36
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

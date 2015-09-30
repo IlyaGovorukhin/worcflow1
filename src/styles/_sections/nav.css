@@ -1,0 +1,119 @@
+/* MIXINS */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../../fonts/MyriadProBold.eot");
+  src: url("../../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadProRegular.woff") format("woff"), url("../../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../../fonts/MyriadProBold.eot");
+  src: url("../../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadProBold.woff") format("woff"), url("../../fonts/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.MyriadProRegular {
+  font-family: "MyriadProRegular";
+}
+.MyriadProBold {
+  font-family: "MyriadProBold";
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../../fonts/RobotoRegular.eot");
+  src: url("../../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobotoRegular.woff") format("woff"), url("../../fonts/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../../fonts/RobotoMedium.eot");
+  src: url("../../fonts/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobotoMedium.woff") format("woff"), url("../../fonts/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.RobotoRegular {
+  font-family: "RobotoRegular";
+}
+.RobotoMedium {
+  font-family: "RobotoMedium";
+}
+/*-----nav------*/
+.navigation {
+  width: 90px;
+  height: auto;
+  float: left;
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.navigation:before,
+.navigation:after {
+  content: "";
+  display: table;
+}
+.navigation:after {
+  clear: both;
+}
+.navigation__list {
+  margin-bottom: 40px;
+}
+.navigation__item {
+  margin-bottom: 5px;
+}
+.navigation_link {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background: url("../img/sprit.png");
+}
+.navigation_link.a0 {
+  background-position: 15px -200px;
+}
+.navigation_link.a1 {
+  background-position: 15px -250px;
+}
+.navigation_link.a2 {
+  background-position: 15px -303px;
+}
+.navigation_link.a3 {
+  background-position: 15px -355px;
+}
+.navigation_link.a4 {
+  background-position: 22px -410px;
+}
+.navigation_link.b0 {
+  background-position: 6px -485px;
+  width: 50px;
+  height: 40px;
+  margin: 30px 20px;
+}
+.navigation_link.b1 {
+  background-position: 2px -448px;
+  background-color: #db2925;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px ;
+  -o-border-radius: 3px;
+  width: 50px;
+  height: 40px;
+  margin: 33px 20px;
+}

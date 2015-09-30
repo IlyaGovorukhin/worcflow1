@@ -1,0 +1,80 @@
+/* MIXINS */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../../fonts/MyriadProBold.eot");
+  src: url("../../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadProRegular.woff") format("woff"), url("../../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../../fonts/MyriadProBold.eot");
+  src: url("../../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadProBold.woff") format("woff"), url("../../fonts/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.MyriadProRegular {
+  font-family: "MyriadProRegular";
+}
+.MyriadProBold {
+  font-family: "MyriadProBold";
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../../fonts/RobotoRegular.eot");
+  src: url("../../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobotoRegular.woff") format("woff"), url("../../fonts/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../../fonts/RobotoMedium.eot");
+  src: url("../../fonts/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobotoMedium.woff") format("woff"), url("../../fonts/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.RobotoRegular {
+  font-family: "RobotoRegular";
+}
+.RobotoMedium {
+  font-family: "RobotoMedium";
+}
+/*-----footer------*/
+.footer {
+  width: 90px;
+  background: #fff;
+}
+.cont {
+  position: absolute;
+  top: 0;
+}
+.cont__info {
+  font-size: 9px;
+  font-family: "RobotoRegular";
+  margin-left: 20px;
+}
+.cont__info-link {
+  color: #dd3734;
+  font-weight: bold;
+}
+.cont__info.c1 {
+  margin-top: 15px;
+}
